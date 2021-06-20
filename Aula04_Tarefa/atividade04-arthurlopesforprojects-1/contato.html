@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <form class="forms" action="http://infoprojetos.com.br:8233/exemplo/login.php">
+        <fieldset>
+            <legend>Contato</legend>
+            <div class="campo">
+                <label for="login">Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="login">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+
+            <div class="campo">
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" size="4">
+            </div>
+
+            <div class="label">
+                <label for="txta1">Digite sua mensagem:</label>
+            </div>
+            <div class="campo">
+                <textarea name="txta1" id="txta1" cols="70" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="urgencia">Nível da sua urgencia</label>
+                <select name="urgencia">
+                    <option value="vazio"></option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Média</option>
+                        <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Zerar</button>
+                <button type="button">
+                    <a href="index.html">Voltar</a>
+                </button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

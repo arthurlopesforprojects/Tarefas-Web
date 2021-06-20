@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+
+    <form class="forms" action="http://infoprojetos.com.br:8233/exemplo/cadastro.php" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="campo">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+
+            <div class="campo">
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="estado">
+                    <option value="vazio"></option>
+                    <optgroup label="Norte">
+                        <option value="RO">RO</option>
+                        <option value="AC">AC</option>
+                        <option value="AM">AM</option>
+                        <option value="RR">RR</option>
+                        <option value="PA">PA</option>
+                        <option value="AP">AP</option>
+                        <option value="TO">TO</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="MA">MA</option>
+                        <option value="PI">PI</option>
+                        <option value="CE">CE</option>
+                        <option value="RN">RN</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="AL">AL</option>
+                        <option value="SE">SE</option>
+                        <option value="BA">BA</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="MG">MG</option>
+                        <option value="ES">ES</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">PR</option>
+                        <option value="SC">SC</option>
+                        <option value="RS">RS</option>
+                    </optgroup>
+                    <optgroup label="Centro Oeste">
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="GO">GO</option>
+                        <option value="DF">DF</option>
+                    </optgroup>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <p></p>
+        </div>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <div class="campo">
+                <div>Natureza do Cargo</div>
+                <div class="opcao">
+
+                    <input type="radio" name="cargo" value="gerencia" id="gerencia">
+                    <label for="gerencia">Gerência</label>
+
+                    <input type="radio" name="cargo" value="financeiro" id="financeiro">
+                    <label for="financeiro">Financeiro</label>
+
+                    <input type="radio" name="cargo" value="recepcao" id="recepcao">
+                    <label for="recepcao">Recepção</label>
+
+                    <input type="radio" name="cargo" value="adm" id="adm">
+                    <label for="adm">Administrativo</label>
+
+                    <input type="radio" name="cargo" value="juridico" id="juridico">
+                    <label for="juridico">Jurídico</label>
+
+
+                </div>
+            </div>
+
+            <div>
+                <p></p>
+            </div>
+
+            <div class="campo">
+                <div>Área de interesse</div>
+                <div class="opcao">
+
+                    <input type="checkbox" name="area" value="comput" id="comput">
+                    <label for="comput">Computação</label>
+
+                    <input type="checkbox" name="area" value="bio" id="bio">
+                    <label for="bio">Biologia</label>
+
+                    <input type="checkbox" name="area" value="meioamb" id="meioamb">
+                    <label for="meioamb">Meio Ambiente</label>
+
+                    <input type="checkbox" name="area" value="engen" id="engen">
+                    <label for="engen">Engenharia</label>
+
+                    <input type="checkbox" name="area" value="hist" id="hist">
+                    <label for="hist">História</label>
+
+
+                </div>
+            </div>
+
+            <div>
+                <p></p>
+                <label for="txta02">Mini-curriculo:</label>
+                <textarea name="curriculo" id="" cols="60" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <p></p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Zerar</button>
+            <button type="button">
+                <a href="index.html">Voltar</a>
+            </button>
+        </div>
+    </form>
+
+</body>
+
+</html>
